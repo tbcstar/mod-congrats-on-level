@@ -96,7 +96,7 @@ public:
         // Announce Module
         if (sConfigMgr->GetBoolDefault("Congrats.Announce", true))
         {
-                ChatHandler(player->GetSession()).SendSysMessage("This server is running the |cff4CFF00CongratsOnLevel |rmodule.");
+                ChatHandler(player->GetSession()).SendSysMessage("服务器已启用 |cff4CFF00升级奖励 |r模块。");
          }
     }
 };
@@ -253,7 +253,7 @@ public:
             {
                 // Issue a server notification for the player on level up.
                 std::ostringstream ss;
-                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFFhas reached |cff4CFF00Level " << to_string(player->getLevel()) << "|cffFFFFFF!";
+                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFF已经达到 |cff4CFF00等级 " << to_string(player->getLevel()) << "|cffFFFFFF!";
                 sWorld->SendServerMessage(SERVER_MSG_STRING, ss.str().c_str());
                 break;
             }
@@ -266,7 +266,7 @@ public:
             {
                 // Issue a server notification for the player on level up.
                 std::ostringstream ss;
-                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFFhas reached |cff4CFF00Level " << level << "|cffFFFFFF!";
+                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFF已经达到 |cff4CFF00等级 " << level << "|cffFFFFFF!";
                 sWorld->SendServerMessage(SERVER_MSG_STRING, ss.str().c_str());
 
                 // Give the items to the player
@@ -281,7 +281,7 @@ public:
 
                 // Issue a raid warning to the player
                 std::ostringstream ss2;
-                ss2 << "Congrats on Level " << level << " " << player->GetName() << "! You've been awarded " << money << " gold and a few treasures!";
+                ss2 << "恭喜达到等级 " << level << " " << player->GetName() << "！ 你已经获得 " << money << " 金币和对应物品！";
                 player->GetSession()->SendNotification(SERVER_MSG_STRING, ss2.str().c_str());
 
                 return;

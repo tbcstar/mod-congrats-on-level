@@ -4,9 +4,7 @@
 - Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-congrats-on-level/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-congrats-on-level)
 
 #### Features:
-This module rewards players when they reach specific levels. It has the option to reward gold, two items, and a
-buff or any combination. It also announces to the world when a player levels up. All rewards can be set in the
-config file for quick modifications.
+当玩家达到特定级别时，该模块将对其进行奖励。它可以选择奖励金币，两个物品以及一个buff或任何组合。它还会在玩家升级时向世界宣布。可以在配置文件中设置所有奖励以进行快速修改。
 
 ### This module currently requires:
 - AzerothCore v1.0.1+
@@ -16,7 +14,7 @@ config file for quick modifications.
 2. Re-run cmake and launch a clean build of AzerothCore
 3. Done :)
 
-### Usage
+### 用法
 - Type: Player/Server
 - Script: CongratsOnLevel
 - Config: Yes
