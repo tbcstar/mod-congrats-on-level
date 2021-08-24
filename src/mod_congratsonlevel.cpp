@@ -215,7 +215,7 @@ public:
             {
                 // Issue a server notification for the player on level up.
                 std::ostringstream ss;
-                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFF已经达到 |cff4CFF00等级 " << to_string(player->getLevel()) << "|cffFFFFFF!";
+                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFF已经达到 |cff4CFF00级 " << std::to_string(player->getLevel()) << "|cffFFFFFF!";
                 sWorld->SendServerMessage(SERVER_MSG_STRING, ss.str().c_str());
             }
 
@@ -224,7 +224,7 @@ public:
             {
                 // Issue a server notification for the player on level up.
                 std::ostringstream ss;
-                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFF已经达到 |cff4CFF00等级 " << level << "|cffFFFFFF!";
+                ss << "|cffFFFFFF[ |cffFF0000C|cffFFA500O|cffFFFF00N|cff00FF00G|cff00FFFFR|cff6A5ACDA|cffFF00FFT|cff98FB98S|cffFF0000! |cffFFFFFF] : |cff4CFF00 " << player->GetName() << " |cffFFFFFF已经达到 |cff4CFF00级 " << level << "|cffFFFFFF!";
                 sWorld->SendServerMessage(SERVER_MSG_STRING, ss.str().c_str());
 
                 // Give the items to the player
