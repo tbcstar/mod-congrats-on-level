@@ -22,9 +22,9 @@ Congrats.Announce = 1
 # 2: 给予玩家的第二个物品id
 
 # Level 10
-# 1 金币/王者祝福BUFF
-# 红玫瑰 / TCG: 泡沫塑料剑架
-Congrats.L10M = 1;
+# 1 金币/国王的祝福
+# Red Rose / TCG: Foam Sword Rack
+Congrats.L10M = 1
 Congrats.L10S = 20217
 Congrats.L101 = 3419
 Congrats.L102 = 45063

@@ -24,6 +24,7 @@
 
 
 ## Credits
+- [SoulSeekkor](https://github.com/SoulSeekkor)
 - [LordPsyan](https://bitbucket.org/lordpsyan/lordpsyan-patches)
 - [Blizzard Entertainment](http://blizzard.com)
 - [TrinityCore](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/THANKS)
