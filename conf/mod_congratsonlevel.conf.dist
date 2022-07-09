@@ -9,11 +9,11 @@
 Congrats.Enable = 1
 
 # 启用每个级别的祝贺通知 (1: true | 0: false)
-CongratsPerLevel.Enable = 1
+CongratsPerLevel.Enable = 0
 
 # 当玩家登录时宣布模块?
 
-Congrats.Announce = 1
+Congrats.Announce = 0
 
 # 设置玩家在每个等级所获得的内容
 # M: 金币 
